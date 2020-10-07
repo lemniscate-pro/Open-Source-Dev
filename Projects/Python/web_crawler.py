@@ -31,7 +31,7 @@ class Crawler(object):
         self.depth_limit = depth_limit # Max depth (number of hops from root)
         self.locked = locked           # Limit search to a single host?
         self.confine_prefix=confine    # Limit search to this prefix
-        self.exclude_prefixes=exclude; # URL prefixes NOT to visit
+        self.exclude_prefixes=exclude; # URLs prefixes NOT to visit
         self.urls_seen = set()          # Used to avoid putting duplicates in queue
         self.urls_remembered = set()    # For reporting to user
         self.visited_links= set()       # Used to avoid re-processing a page
